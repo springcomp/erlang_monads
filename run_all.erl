@@ -11,5 +11,6 @@ run_all() ->
     evaluator_output:test()
 .
 run_all(monads) ->
-    monadic_evaluator:test()
+    monadic_evaluator:test(),
+    monadic_evaluator_exceptions:test()
 .
