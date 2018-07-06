@@ -14,5 +14,10 @@ run_all(monads) ->
     monadic_evaluator:test(),
     monadic_evaluator_exceptions:test(),
     monadic_evaluator_state:test(),
-    monadic_evaluator_output:test()
+    monadic_evaluator_output:test();
+run_all(tests) ->
+    identity_monad:test(),
+    exceptions_monad:test(),
+    state_monad:test(),
+    output_monad:test()
 .
